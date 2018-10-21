@@ -5,9 +5,14 @@ namespace QuickSort
     class Program
     {
         static void Main(string[] args)
-        {
-            int[] arr = { 0, -1, -3, 62, 12, 1, 2, 66, -146, 721, -29 };
-            int[] arr2 = { 1, -56, 7, 1, 14, 8, 7, 1, 6, 1, 5 };
+        {   
+            int[] arr = new int[12];
+            Console.WriteLine("please Enter Nubers");
+            for (int i = 0; i <  12   ; i++)
+            {
+                arr[i] = int.Parse(Console.ReadLine());
+            }
+            
 
            QuickSortClass.Sort(ref arr, 0, arr.Length);
             Console.WriteLine("all good");
